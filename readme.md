@@ -1,5 +1,19 @@
 # Aprendizado de Automação de Teste com Appium e RobotFramework
 
+### Instalação e configuração do Appium com RobotFramework
+
+## Instale a versão LTS do NodeJs
+
+https://nodejs.org/en/
+
+## Instale o Appium
+
+	npm install appium -g
+
+## Instale o Appium-Doctor
+
+	npm install appium-doctor -g
+
 # Configurando o Poetry
 
 ### Instação do Poetry
@@ -12,8 +26,16 @@ Ativando o ambiente virtual
 
 	poetry shell
 
+Adicionar dependências 
+
+    poetry add robotframework
+
+Remevendo dependências
+
+    poetry remove robotframework
+
 Exportando as dependências para o Requirements.txt
 
-	poetry export -f requirements.txt --output requirements.txt
+	poetry export -o requirements.txt --output requirements.txt
 
 	

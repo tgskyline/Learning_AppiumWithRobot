@@ -9,6 +9,8 @@ license = "MIT"
 python = "^3.10"
 pytest = "^7.1.2"
 robotframework = "^5.0.1"
+Appium-Python-Client = "^2.2.0"
+selenium = "^4.2.0"
 
 [tool.poetry.dev-dependencies]
 

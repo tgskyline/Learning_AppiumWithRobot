@@ -52,7 +52,12 @@ Adicionar dependências
 
     poetry add robotframework
 
-Remevendo dependências
+	EXEMPLO
+
+	Antes com PIP: pip install --upgrade robotframework-appiumlibrary
+	Depois com Poetry: Poetry add --upgrade robotframework-appiumlibrary
+
+Removendo dependências
 
     poetry remove robotframework
 

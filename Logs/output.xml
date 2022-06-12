@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220610 14:49:35.019" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220611 17:34:34.792" rpa="false" schemaversion="3">
 <suite id="s1" name="Nav" source="C:\Users\Tiago Gomes\OneDrive\Documentos\Automação de Testes\RobotFramework\Mobile\Learning_AppiumWithRobot\nav.robot">
 <test id="s1-t1" name="Deve abrir a tela Dialogs" line="6">
 <kw name="Open Application" library="AppiumLibrary">
@@ -14,75 +14,71 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220610 14:49:35.278" endtime="20220610 14:49:46.858"/>
+<status status="PASS" starttime="20220611 17:34:34.937" endtime="20220611 17:34:44.899"/>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>COMEÇAR</arg>
 <arg>5</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20220610 14:49:46.859" endtime="20220610 14:49:50.696"/>
+<status status="PASS" starttime="20220611 17:34:44.900" endtime="20220611 17:34:48.825"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>COMEÇAR</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20220610 14:49:50.697" endtime="20220610 14:49:51.196"/>
+<status status="PASS" starttime="20220611 17:34:48.826" endtime="20220611 17:34:49.211"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>xpath = //android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
-<arg>5</arg>
+<arg>xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
+<arg>20</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20220610 14:49:53.225" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220610 14:49:52.384" endtime="20220610 14:49:53.225"/>
-</kw>
-<msg timestamp="20220610 14:49:53.226" level="FAIL">AttributeError: type object 'Command' has no attribute 'IS_ELEMENT_DISPLAYED'</msg>
-<status status="FAIL" starttime="20220610 14:49:51.197" endtime="20220610 14:49:53.228"/>
+<status status="PASS" starttime="20220611 17:34:49.211" endtime="20220611 17:34:50.405"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]</arg>
 <doc>Click element identified by `locator`.</doc>
-<status status="NOT RUN" starttime="20220610 14:49:53.229" endtime="20220610 14:49:53.229"/>
+<msg timestamp="20220611 17:34:50.406" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20220611 17:34:50.405" endtime="20220611 17:34:50.471"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>id=io.qaninja.android.twp:id/navView</arg>
 <arg>5</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" starttime="20220610 14:49:53.229" endtime="20220610 14:49:53.229"/>
+<status status="PASS" starttime="20220611 17:34:50.472" endtime="20220611 17:34:51.477"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>DIALOGS</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="NOT RUN" starttime="20220610 14:49:53.230" endtime="20220610 14:49:53.230"/>
+<status status="PASS" starttime="20220611 17:34:51.478" endtime="20220611 17:34:51.573"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>id=io.qaninja.android.twp:id/toolbarTitle</arg>
 <arg>5</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="NOT RUN" starttime="20220610 14:49:53.230" endtime="20220610 14:49:53.230"/>
+<status status="PASS" starttime="20220611 17:34:51.574" endtime="20220611 17:34:52.513"/>
 </kw>
 <kw name="Element Text Should Be" library="AppiumLibrary">
 <arg>id=io.qaninja.android.twp:id/toolbarTitle</arg>
 <arg>DIALOGS</arg>
 <doc>Verifies element identified by ``locator`` exactly contains text ``expected``.</doc>
-<status status="NOT RUN" starttime="20220610 14:49:53.230" endtime="20220610 14:49:53.230"/>
+<msg timestamp="20220611 17:34:52.515" level="INFO">Verifying element 'id=io.qaninja.android.twp:id/toolbarTitle' contains exactly text 'DIALOGS'.</msg>
+<status status="PASS" starttime="20220611 17:34:52.514" endtime="20220611 17:34:52.546"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="NOT RUN" starttime="20220610 14:49:53.231" endtime="20220610 14:49:53.231"/>
+<status status="PASS" starttime="20220611 17:34:52.547" endtime="20220611 17:34:52.912"/>
 </kw>
-<status status="FAIL" starttime="20220610 14:49:35.278" endtime="20220610 14:49:53.232">AttributeError: type object 'Command' has no attribute 'IS_ELEMENT_DISPLAYED'</status>
+<status status="PASS" starttime="20220611 17:34:34.936" endtime="20220611 17:34:52.913"/>
 </test>
-<status status="FAIL" starttime="20220610 14:49:35.021" endtime="20220610 14:49:53.233"/>
+<status status="PASS" starttime="20220611 17:34:34.794" endtime="20220611 17:34:52.914"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Nav">Nav</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Nav">Nav</stat>
 </suite>
 </statistics>
 <errors>

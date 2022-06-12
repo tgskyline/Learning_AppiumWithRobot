@@ -18,9 +18,9 @@ https://nodejs.org/en/
 
 ### Instação do Poetry
 
-Para instalar o Poetry de forma Global na pasta do Python utilize o comando abaixo
+Para instalar o Poetry de forma Global na pasta do Python utilize o comando abaixo, mas é importante ter conhecimento da documentação completa em <https://python-poetry.org/docs/>
 
-	pip install poetry
+	(Invoke-WebRequest -Uri https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python -
 
 
 Execute o comando abaixo para listar as configurações atuais do Poetry

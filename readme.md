@@ -14,7 +14,7 @@ https://nodejs.org/en/
 
 	npm install appium-doctor -g
 
-# Configurando o Poetry
+# Gerenciamento de Dependências e Versionamento de Automação de Teste com Poetry
 
 ### Instação do Poetry
 

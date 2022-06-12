@@ -65,6 +65,12 @@ Exportando as dependências para o Requirements.txt
 
 	poetry export -o requirements.txt --output requirements.txt
 
+### Instalação do Appium para Robot Framework utilizando o Poetry
+
+Para instalar o Appium for Robot, vamos instalar o Appium-Python-Client, pois ele é uma lib que tem como depedência o Appium for Robot, não vamos instalar diretamente o robotframework-appiumlibrary porque o Poetry não é capaz de gerenciar as dependências adequadas partindo dele.
+
+	poetry add Appium-Python-Client@1.3.0
+
 
 
 

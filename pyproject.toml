@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Robot-Appium"
-version = "0.0.1"
+version = "0.0.5"
 description = "Learning Appium with RobotFramework"
 authors = ["Tiago Gomes"]
 license = "MIT"

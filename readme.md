@@ -71,8 +71,27 @@ Para instalar o Appium for Robot, vamos instalar o Appium-Python-Client, pois el
 
 	poetry add Appium-Python-Client@1.3.0
 
+### Dependências locais para configuração do ambiente
 
+#### Java JDK 8
 
+Faça o download e instalação
+
+	https://www.oracle.com/java/technologies/downloads/#java8-windows
+
+Configure as variáveis do sistema JAVA_HOME e JAVA_HOME\bin 
+
+<b>NOTA</b>: Caso tenha tenha conhecimento utilize o script abaixo em um Prompt de comando PowerShell como Administrador, editando o caminho da pasta JDK do seu computador.
+
+	@echo off
+	@echo ***************** SETANDO VARIAVEIS DE AMBIENTE *****************
+	@echo off
+	SETX JAVA_HOME "C:\Program Files (x86)\Java\jdkX.X.X_XXX\;%JAVA_HOME%" -m
+	SETX PATH "C:\Program Files (x86)\Java\jdkX.X.X_XXX\bin\;%PATH%" -m
+	@echo .
+	@echo ***************** REINICIE O COMPUTADOR *****************
+	@echo .
+	pause
 
 
 	

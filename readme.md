@@ -6,13 +6,94 @@
 
 https://nodejs.org/en/
 
-## Instale o Appium
+## Instale o Servidor do Appium
+
+<b>NOTA:</b> Abra o PowerShell como Administrador
 
 	npm install appium -g
 
 ## Instale o Appium-Doctor
 
 	npm install appium-doctor -g
+
+# Dependências locais para configuração do ambiente
+
+## Java JDK 8
+
+Faça o download e instalação
+
+	https://www.oracle.com/java/technologies/downloads/#java8-windows
+
+Configure as variáveis do sistema JAVA_HOME e %JAVA_HOME%\bin 
+
+<b>NOTA</b>: Caso tenha tenha conhecimento utilize o script abaixo em um Prompt de comando PowerShell como Administrador, editando o caminho da pasta JDK do seu computador.
+
+	@echo off
+	@echo ***************** SETANDO VARIAVEIS DE AMBIENTE *****************
+	@echo off
+	SETX JAVA_HOME "C:\Program Files (x86)\Java\jdkX.X.X_XXX\;%JAVA_HOME%" -m
+	SETX PATH "C:\Program Files (x86)\Java\jdkX.X.X_XXX\bin\;%PATH%" -m
+	@echo .
+	@echo .
+	@echo **************** FECHE E ABRA NOVAMENTE O PROMPT ****************
+	@echo .
+	pause
+
+Execute o comando abaixo e válide se as variáveis foram criadas adequadamente sejam manualmente ou pelo script.
+
+	echo %JAVA_HOME%
+
+<br>
+	
+	echo %PATH%
+
+## Android Studio
+
+Faça o download e instalação
+
+	https://developer.android.com/studio?hl=pt&gclid=Cj0KCQjwsrWZBhC4ARIsAGGUJurRKSxt-NBHqwCdhhUbUZCqeH6qRINA8nHFWwnVokq_cc0oWr2e_VEaAvj0EALw_wcB&gclsrc=aw.ds
+
+-<b>ATENÇÃO:</b> Marque a opção "Android Device Manager"
+
+Configure as variáveis do sistema ANDROID_HOME, %ANDROID_HOME%\platform-tools e 
+
+<b>NOTA</b>: Caso tenha tenha conhecimento utilize o script abaixo em um Prompt de comando PowerShell como Administrador, editando o caminho da pasta do seu usuário no computador que esta como SEU-USUARIO.
+
+	@echo off
+	@echo ***************** SETANDO VARIAVEIS DE AMBIENTE *****************
+	@echo off
+	SETX ANDROID_HOME -m "C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\
+	SETX PATH "C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\platform-tools\;C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\;C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\bin\;C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\lib\;%PATH%" -m
+	@echo .
+	@echo **************** FECHE E ABRA NOVAMENTE O PROMPT ****************
+	@echo .
+	pause
+
+Execute o comando abaixo e válide se as variáveis foram criadas adequadamente sejam manualmente ou pelo script.
+
+	echo %ANDROID_HOME%
+
+<br>
+	
+	echo %PATH%
+
+## Appium para Desktop
+
+Faça download e instale
+
+	https://appium.io/
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Gerenciamento de Dependências e Versionamento de Automação de Teste com Poetry
 
@@ -71,27 +152,3 @@ Para instalar o Appium for Robot, vamos instalar o Appium-Python-Client, pois el
 
 	poetry add Appium-Python-Client@1.3.0
 
-### Dependências locais para configuração do ambiente
-
-#### Java JDK 8
-
-Faça o download e instalação
-
-	https://www.oracle.com/java/technologies/downloads/#java8-windows
-
-Configure as variáveis do sistema JAVA_HOME e JAVA_HOME\bin 
-
-<b>NOTA</b>: Caso tenha tenha conhecimento utilize o script abaixo em um Prompt de comando PowerShell como Administrador, editando o caminho da pasta JDK do seu computador.
-
-	@echo off
-	@echo ***************** SETANDO VARIAVEIS DE AMBIENTE *****************
-	@echo off
-	SETX JAVA_HOME "C:\Program Files (x86)\Java\jdkX.X.X_XXX\;%JAVA_HOME%" -m
-	SETX PATH "C:\Program Files (x86)\Java\jdkX.X.X_XXX\bin\;%PATH%" -m
-	@echo .
-	@echo ***************** REINICIE O COMPUTADOR *****************
-	@echo .
-	pause
-
-
-	

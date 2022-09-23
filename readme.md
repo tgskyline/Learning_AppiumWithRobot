@@ -24,7 +24,10 @@ Faça o download e instalação
 
 	https://www.oracle.com/java/technologies/downloads/#java8-windows
 
-Configure as variáveis do sistema JAVA_HOME e %JAVA_HOME%\bin 
+#### Configure as variáveis do sistema:
+
+- <b>JAVA_HOME</b>: C:\Program Files (x86)\Java\jdkX.X.X_XXX\
+- <b>PATH</b>: %JAVA_HOME%\bin
 
 <b>NOTA</b>: Caso tenha tenha conhecimento utilize o script abaixo em um Prompt de comando PowerShell como Administrador, editando o caminho da pasta JDK do seu computador.
 
@@ -51,18 +54,25 @@ Execute o comando abaixo e válide se as variáveis foram criadas adequadamente 
 
 Faça o download e instalação
 
-	https://developer.android.com/studio?hl=pt&gclid=Cj0KCQjwsrWZBhC4ARIsAGGUJurRKSxt-NBHqwCdhhUbUZCqeH6qRINA8nHFWwnVokq_cc0oWr2e_VEaAvj0EALw_wcB&gclsrc=aw.ds
+[Clique aqui para o download do Android Studio](https://developer.android.com/studio?hl=pt&gclid=Cj0KCQjwsrWZBhC4ARIsAGGUJurRKSxt-NBHqwCdhhUbUZCqeH6qRINA8nHFWwnVokq_cc0oWr2e_VEaAvj0EALw_wcB&gclsrc=aw.ds)
 
 -<b>ATENÇÃO:</b> Marque a opção "Android Device Manager"
 
-Configure as variáveis do sistema ANDROID_HOME, %ANDROID_HOME%\platform-tools e 
+#### Configure as variáveis do sistema:
+
+ - <b>ANDROID_HOME</b>: C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\
+ - <b>PATH</b>: C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\platform-tools\
+ - <b>PATH</b>: C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\
+ - <b>PATH</b>: C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\bin\
+ - <b>PATH</b>: C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\lib\
+
 
 <b>NOTA</b>: Caso tenha tenha conhecimento utilize o script abaixo em um Prompt de comando PowerShell como Administrador, editando o caminho da pasta do seu usuário no computador que esta como SEU-USUARIO.
 
 	@echo off
 	@echo ***************** SETANDO VARIAVEIS DE AMBIENTE *****************
 	@echo off
-	SETX ANDROID_HOME -m "C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\
+	SETX ANDROID_HOME -m "C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\;%ANDROID_HOME%" -m
 	SETX PATH "C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\platform-tools\;C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\;C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\bin\;C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\lib\;%PATH%" -m
 	@echo .
 	@echo **************** FECHE E ABRA NOVAMENTE O PROMPT ****************
@@ -90,7 +100,7 @@ Faça download e instale
 
 
 
-
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< <b>SESSÃO ABAIXO EM DESENVOLVIMENTO</b> >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 

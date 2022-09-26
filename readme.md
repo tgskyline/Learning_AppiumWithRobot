@@ -113,7 +113,7 @@ Na sessão Appium Server confuigure da seguinte forma
 - <b>Remote Port</b>: Pode ser a padrão 4723
 - <b>Remote Path</b>:/wd/hub
 
-<b>OBS</b>: As paremetrizações de Remote Host e Port devem ser replciadas no Appium Server
+<b>OBS</b>: As paremetrizações de Remote Host e Port devem ser replicadas no Appium Server
 
 <br>
 

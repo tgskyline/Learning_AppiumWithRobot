@@ -93,6 +93,39 @@ Faça download e instale
 
 	https://appium.io/
 
+Faça download e instale 
+
+	https://github.com/appium/appium-inspector
+
+Configure os Capabilities
+
+<b>NOTA</b>: Para identificar o seu 'udid' utilize o comando abaixo em um prompt PowerShell
+
+	abd devices
+
+<b>Atenção</b>: Caso o retorno do comando seja 'unauthorized', feche o APK, no Android Studio > AVD, localize a opção 'Wipe Data' ele irá reconfigurar as parametrizações de fábricxa do emulador ou dispositivo, após o emulador carregar execute novamente o comando.
+
+<br>
+
+Na sessão Appium Server confuigure da seguinte forma
+
+- <b>Remote Host</b>: Pode ser IP ou 'localhost'
+- <b>Remote Port</b>: Pode ser a padrão 4723
+- <b>Remote Path</b>:/wd/hub
+
+<b>OBS</b>: As paremetrizações de Remote Host e Port devem ser replciadas no Appium Server
+
+<br>
+
+	{
+	"appium:automationName": "UiAutomator2",
+	"platformName": "Android",
+	"appium:deviceName": "Emulator",
+	"appium:app": "<Loca do APK>",
+	"appium:udid": "emulator-5554"
+	}
+
+
 
 
 

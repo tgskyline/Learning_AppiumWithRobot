@@ -127,6 +127,14 @@ Na sessão Appium Server confuigure da seguinte forma
 
 
 
+## Appium para Robot Framework
+
+[Link do Repositório da Library Appium para Robot](https://github.com/serhatbolsu/robotframework-appiumlibrary)
+
+Execute o comando abaixo
+
+	pip install --upgrade robotframework-appiumlibrary
+
 
 
 

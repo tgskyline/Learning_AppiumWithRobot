@@ -136,6 +136,15 @@ Execute o comando abaixo
 	pip install --upgrade robotframework-appiumlibrary
 
 
+Uma vez instalado o Appium será utilizado a keyword "Open application" e sua configuração é similar ao dos capabilites.
+
+    Open Application     http://127.0.0.1:4723/wd/hub
+    ...        			 automationName=UiAutomator2
+    ...        			 platformName=Android
+    ...        			 deviceName=Emulator
+    ...        			 app=${EXECDIR}/APK/twp.apk
+
+
 
 
 

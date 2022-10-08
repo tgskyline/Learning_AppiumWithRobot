@@ -9,9 +9,12 @@ ${NavView}        id=io.qaninja.android.twp:id/navView
 ${Campo_Email}    id=io.qaninja.android.twp:id/etEmail
 ${Campo_Senha}    id=io.qaninja.android.twp:id/etPassword
 ${BTN_Entrar}     id=io.qaninja.android.twp:id/btnSubmit
+${BTN_CliqueSimples}    id=io.qaninja.android.twp:id/short_click
 ${MSG_LoginSucesso}    Show! Suas credenciais são validas.
 ${MSG_EscolhaRadioBTN}    Escolha sua linguagem preferida
 ${MSG_MarqueTechs}    Marque as techs que usam Appium
+${MSG_BtnCliqueSimples}    Botão clique simples
+${MSG_CliqueSimples}    Isso é um clique simples
 ${Radio_Python}    xpath=//android.widget.RadioButton[contains(@text, 'Python')]
 ${CheckBox_Robot}    xpath=//android.widget.CheckBox[contains(@text, 'Robot Framework')]
 ${RefreshCheckbox}    id=io.qaninja.android.twp:id/rvContainer
@@ -46,4 +49,13 @@ Acessa tela Botões de Radio
 Acessa tela CheckBox
     Click Text    CHECKBOX
     Wait Until Page Contains    ${MSG_MarqueTechs}
+
+Acessa tela Botões
+    Clica no botão hamburguer e valida resultado
+    Click Text    BOTÕES
+    Wait Until Page Contains    BOTÕES
+    
+Acessa tela Clique Simples
+    Click Text    CLIQUE SIMPLES
+    Wait Until Page Contains    ${MSG_BtnCliqueSimples}
     

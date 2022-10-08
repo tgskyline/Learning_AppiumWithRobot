@@ -6,7 +6,6 @@ Resource    Functions.robot
 ${Login_Papito}    eu@papito.io
 ${Senha_Papito}    qaninja
 
-
 *** Keywords ***
 Abre a aplicação
         # /wd/hub é o EndPoint do selenium

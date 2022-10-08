@@ -1,11 +1,11 @@
 *** Settings ***
-Resource    ../Resources/Controller.robot
+Resource            ../Resources/Controller.robot
 
-Test Setup    Abre a aplicação        
-Test Teardown    Fecha a aplicação
+Test Setup          Abre a aplicação
+Test Teardown       Fecha a aplicação
+
 
 *** Test Cases ***
-
 Deve clicar uma vez
     Acessa tela Botões
     Acessa tela Clique Simples
@@ -17,6 +17,3 @@ Deve fazer um clique longo
     Acessa tela Clique Longo
     Long Press    ${BTN_CliqueLongo}    1000
     Wait Until Page Contains    ${MSG_CliqueLongo}
-
-    
-

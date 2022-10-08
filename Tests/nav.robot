@@ -5,27 +5,30 @@ Test Setup    Abre a aplicação
 Test Teardown    Fecha a aplicação
 
 
+*** Variables ***
+${Toolbar_Title}    id=io.qaninja.android.twp:id/toolbarTitle
+
 *** Test Cases ***
 Deve abrir a tela Dialogs
     Aguardar e clicar em COMEÇAR
     Clica no botão hamburguer e valida resultado     
 
     Click Text                       DIALOGS
-    Wait Until Element Is Visible    id=io.qaninja.android.twp:id/toolbarTitle        
-    Element Text Should Be           id=io.qaninja.android.twp:id/toolbarTitle    DIALOGS
+    Wait Until Element Is Visible    ${Toolbar_Title}        
+    Element Text Should Be           ${Toolbar_Title}   DIALOGS
     
 Deve abrir a tela FORMS
     Aguardar e clicar em COMEÇAR
     Clica no botão hamburguer e valida resultado     
 
     Click Text                       FORMS
-    Wait Until Element Is Visible    id=io.qaninja.android.twp:id/toolbarTitle      
-    Element Text Should Be           id=io.qaninja.android.twp:id/toolbarTitle    FORMS
+    Wait Until Element Is Visible    ${Toolbar_Title}     
+    Element Text Should Be           ${Toolbar_Title}    FORMS
     
 Deve abrir a tela AVENGERS
     Aguardar e clicar em COMEÇAR
     Clica no botão hamburguer e valida resultado     
     
     Click Text                       AVENGERS
-    Wait Until Element Is Visible    id=io.qaninja.android.twp:id/toolbarTitle      
-    Element Text Should Be           id=io.qaninja.android.twp:id/toolbarTitle    AVENGERS
+    Wait Until Element Is Visible    ${Toolbar_Title}
+    Element Text Should Be           ${Toolbar_Title}    AVENGERS

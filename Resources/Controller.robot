@@ -1,13 +1,13 @@
 *** Settings ***
 Library    AppiumLibrary
+Resource    Functions.robot
 
 *** Variables ***
-${Hamburguer}    xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]      
-${NavView}       id=io.qaninja.android.twp:id/navView
-
+${Login_Papito}    eu@papito.io
+${Senha_Papito}    qaninja
+${MSG_LoginSucesso}    Show! Suas credenciais são validas.
 
 *** Keywords ***
-
 Abre a aplicação
         # /wd/hub é o EndPoint do selenium
     Set Appium Timeout    8
@@ -22,11 +22,4 @@ Abre a aplicação
 Fecha a aplicação
     Close Application
 
-Aguardar e clicar em COMEÇAR
-    Wait Until Page Contains        COMEÇAR    
-    Click Text                      COMEÇAR
 
-Clica no botão hamburguer e valida resultado
-    Wait Until Element Is Visible    ${Hamburguer}
-    Click Element                    ${Hamburguer}
-    Wait Until Element Is Visible    ${NavView}

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20221008 07:00:32.710" rpa="false" schemaversion="3">
-<suite id="s1" name="Login" source="c:\Users\tiago.santos\OneDrive\Documentos\Automação de Testes\RobotFramework\Mobile\Learning_AppiumWithRobot\Tests\login.robot">
-<test id="s1-t1" name="Deve logar com sucesso" line="17">
+<robot generator="Robot 5.0.1 (Python 3.10.6 on win32)" generated="20221008 07:23:02.172" rpa="false" schemaversion="3">
+<suite id="s1" name="3-Login" source="c:\Users\tiago.santos\OneDrive\Documentos\Automação de Testes\RobotFramework\Mobile\Learning_AppiumWithRobot\Tests\3-login.robot">
+<test id="s1-t1" name="Deve logar com sucesso" line="9">
 <kw name="Abre a aplicação" library="Controller" type="SETUP">
 <kw name="Set Appium Timeout" library="AppiumLibrary">
 <arg>8</arg>
 <doc>Sets the timeout in seconds used by various keywords.</doc>
-<status status="PASS" starttime="20221008 07:00:32.903" endtime="20221008 07:00:32.903"/>
+<status status="PASS" starttime="20221008 07:23:02.418" endtime="20221008 07:23:02.418"/>
 </kw>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://127.0.0.1:4723/wd/hub</arg>
@@ -20,97 +20,100 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20221008 07:00:32.904" endtime="20221008 07:00:45.522"/>
+<status status="PASS" starttime="20221008 07:23:02.418" endtime="20221008 07:23:13.902"/>
 </kw>
-<kw name="Aguardar e clicar em COMEÇAR" library="Controller">
+<kw name="Aguardar e clicar em COMEÇAR" library="Functions">
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>COMEÇAR</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20221008 07:00:45.523" endtime="20221008 07:00:49.194"/>
+<status status="PASS" starttime="20221008 07:23:13.902" endtime="20221008 07:23:17.969"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>COMEÇAR</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20221008 07:00:49.194" endtime="20221008 07:00:49.661"/>
+<status status="PASS" starttime="20221008 07:23:17.969" endtime="20221008 07:23:18.600"/>
 </kw>
-<status status="PASS" starttime="20221008 07:00:45.522" endtime="20221008 07:00:49.662"/>
+<status status="PASS" starttime="20221008 07:23:13.902" endtime="20221008 07:23:18.601"/>
 </kw>
-<status status="PASS" starttime="20221008 07:00:32.903" endtime="20221008 07:00:49.662"/>
+<status status="PASS" starttime="20221008 07:23:02.416" endtime="20221008 07:23:18.601"/>
 </kw>
-<kw name="Clica no botão hamburguer e valida resultado" library="Controller">
+<kw name="Acessa a tela de Login" library="Functions">
+<kw name="Clica no botão hamburguer e valida resultado" library="Functions">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${Hamburguer}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20221008 07:00:49.662" endtime="20221008 07:00:50.982"/>
+<status status="PASS" starttime="20221008 07:23:18.604" endtime="20221008 07:23:19.945"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${Hamburguer}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20221008 07:00:50.984" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
-<status status="PASS" starttime="20221008 07:00:50.982" endtime="20221008 07:00:51.074"/>
+<msg timestamp="20221008 07:23:19.948" level="INFO">Clicking element 'xpath=//android.widget.ImageButton[@content-desc="Open navigation drawer"]'.</msg>
+<status status="PASS" starttime="20221008 07:23:19.945" endtime="20221008 07:23:20.123"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>${NavView}</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20221008 07:00:51.075" endtime="20221008 07:00:52.107"/>
+<status status="PASS" starttime="20221008 07:23:20.124" endtime="20221008 07:23:21.276"/>
 </kw>
-<status status="PASS" starttime="20221008 07:00:49.662" endtime="20221008 07:00:52.107"/>
+<status status="PASS" starttime="20221008 07:23:18.604" endtime="20221008 07:23:21.277"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>FORMS</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20221008 07:00:52.108" endtime="20221008 07:00:52.253"/>
+<status status="PASS" starttime="20221008 07:23:21.278" endtime="20221008 07:23:21.520"/>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>FORMS</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20221008 07:00:52.255" endtime="20221008 07:00:52.837"/>
+<status status="PASS" starttime="20221008 07:23:21.520" endtime="20221008 07:23:22.247"/>
 </kw>
 <kw name="Click Text" library="AppiumLibrary">
 <arg>LOGIN</arg>
 <doc>Click text identified by ``text``.</doc>
-<status status="PASS" starttime="20221008 07:00:52.837" endtime="20221008 07:00:53.288"/>
+<status status="PASS" starttime="20221008 07:23:22.248" endtime="20221008 07:23:22.765"/>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>Fala QA, vamos testar o login?</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20221008 07:00:53.289" endtime="20221008 07:00:54.338"/>
+<status status="PASS" starttime="20221008 07:23:22.766" endtime="20221008 07:23:24.405"/>
+</kw>
+<status status="PASS" starttime="20221008 07:23:18.603" endtime="20221008 07:23:24.405"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${Campo_Email}</arg>
 <arg>${Login_Papito}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20221008 07:00:54.340" level="INFO">Typing text 'eu@papito.io' into text field 'id=io.qaninja.android.twp:id/etEmail'</msg>
-<status status="PASS" starttime="20221008 07:00:54.339" endtime="20221008 07:00:54.899"/>
+<msg timestamp="20221008 07:23:24.409" level="INFO">Typing text 'eu@papito.io' into text field 'id=io.qaninja.android.twp:id/etEmail'</msg>
+<status status="PASS" starttime="20221008 07:23:24.407" endtime="20221008 07:23:25.044"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${Campo_Senha}</arg>
 <arg>${Senha_Papito}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20221008 07:00:54.903" level="INFO">Typing text 'qaninja' into text field 'id=io.qaninja.android.twp:id/etPassword'</msg>
-<status status="PASS" starttime="20221008 07:00:54.900" endtime="20221008 07:00:55.472"/>
+<msg timestamp="20221008 07:23:25.050" level="INFO">Typing text 'qaninja' into text field 'id=io.qaninja.android.twp:id/etPassword'</msg>
+<status status="PASS" starttime="20221008 07:23:25.048" endtime="20221008 07:23:26.085"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${BTN_Entrar}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20221008 07:00:55.474" level="INFO">Clicking element 'id=io.qaninja.android.twp:id/btnSubmit'.</msg>
-<status status="PASS" starttime="20221008 07:00:55.473" endtime="20221008 07:00:56.005"/>
+<msg timestamp="20221008 07:23:26.089" level="INFO">Clicking element 'id=io.qaninja.android.twp:id/btnSubmit'.</msg>
+<status status="PASS" starttime="20221008 07:23:26.087" endtime="20221008 07:23:26.623"/>
 </kw>
 <kw name="Wait Until Page Contains" library="AppiumLibrary">
 <arg>${MSG_LoginSucesso}</arg>
 <doc>Waits until `text` appears on current page.</doc>
-<status status="PASS" starttime="20221008 07:00:56.006" endtime="20221008 07:00:56.133"/>
+<status status="PASS" starttime="20221008 07:23:26.625" endtime="20221008 07:23:27.033"/>
 </kw>
 <kw name="Fecha a aplicação" library="Controller" type="TEARDOWN">
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20221008 07:00:56.139" endtime="20221008 07:00:57.355"/>
+<status status="PASS" starttime="20221008 07:23:27.036" endtime="20221008 07:23:29.076"/>
 </kw>
-<status status="PASS" starttime="20221008 07:00:56.138" endtime="20221008 07:00:57.356"/>
+<status status="PASS" starttime="20221008 07:23:27.034" endtime="20221008 07:23:29.077"/>
 </kw>
-<status status="PASS" starttime="20221008 07:00:32.902" endtime="20221008 07:00:57.357"/>
+<status status="PASS" starttime="20221008 07:23:02.416" endtime="20221008 07:23:29.082"/>
 </test>
-<status status="PASS" starttime="20221008 07:00:32.714" endtime="20221008 07:00:57.358"/>
+<status status="PASS" starttime="20221008 07:23:02.177" endtime="20221008 07:23:29.085"/>
 </suite>
 <statistics>
 <total>
@@ -119,7 +122,7 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Login">Login</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="3-Login">3-Login</stat>
 </suite>
 </statistics>
 <errors>

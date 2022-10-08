@@ -16,6 +16,8 @@ Abre a aplicação
     ...        platformName=Android
     ...        deviceName=Emulator
     ...        app=${EXECDIR}/App/twp.apk
+    Aguardar e clicar em COMEÇAR
+
 
 Fecha a aplicação
     Close Application

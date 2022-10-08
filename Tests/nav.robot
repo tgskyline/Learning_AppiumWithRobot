@@ -10,7 +10,6 @@ ${Toolbar_Title}    id=io.qaninja.android.twp:id/toolbarTitle
 
 *** Test Cases ***
 Deve abrir a tela Dialogs
-    Aguardar e clicar em COMEÇAR
     Clica no botão hamburguer e valida resultado     
 
     Click Text                       DIALOGS
@@ -18,7 +17,6 @@ Deve abrir a tela Dialogs
     Element Text Should Be           ${Toolbar_Title}   DIALOGS
     
 Deve abrir a tela FORMS
-    Aguardar e clicar em COMEÇAR
     Clica no botão hamburguer e valida resultado     
 
     Click Text                       FORMS
@@ -26,7 +24,6 @@ Deve abrir a tela FORMS
     Element Text Should Be           ${Toolbar_Title}    FORMS
     
 Deve abrir a tela AVENGERS
-    Aguardar e clicar em COMEÇAR
     Clica no botão hamburguer e valida resultado     
     
     Click Text                       AVENGERS

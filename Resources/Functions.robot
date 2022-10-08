@@ -10,6 +10,9 @@ ${Campo_Email}    id=io.qaninja.android.twp:id/etEmail
 ${Campo_Senha}    id=io.qaninja.android.twp:id/etPassword
 ${BTN_Entrar}     id=io.qaninja.android.twp:id/btnSubmit
 ${MSG_LoginSucesso}    Show! Suas credenciais são validas.
+${MSG_EscolhaRadioBTN}    Escolha sua linguagem preferida
+${Radio_Python}    xpath=//android.widget.RadioButton[contains(@text, 'Python')]
+
 
 *** Keywords ***
 
@@ -28,3 +31,11 @@ Acessa a tela de Login
     Wait Until Page Contains    FORMS
     Click Text    LOGIN
     Wait Until Page Contains    Fala QA, vamos testar o login?
+
+Acessa tela Inputs
+    Clica no botão hamburguer e valida resultado
+    click Text    INPUTS
+    Wait Until Page Contains    INPUTS
+    Click Text    BOTÕES DE RADIO
+    Wait Until Page Contains    ${MSG_EscolhaRadioBTN}
+    

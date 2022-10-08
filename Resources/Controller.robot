@@ -5,7 +5,7 @@ Resource    Functions.robot
 *** Variables ***
 ${Login_Papito}    eu@papito.io
 ${Senha_Papito}    qaninja
-${MSG_LoginSucesso}    Show! Suas credenciais são validas.
+
 
 *** Keywords ***
 Abre a aplicação

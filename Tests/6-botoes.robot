@@ -12,3 +12,11 @@ Deve clicar uma vez
     Click Element    ${BTN_CliqueSimples}
     Wait Until Page Contains    ${MSG_BtnCliqueSimples}
 
+Deve fazer um clique longo
+    Acessa tela Botões
+    Acessa tela Clique Longo
+    Long Press    ${BTN_CliqueLongo}    1000
+    Wait Until Page Contains    ${MSG_CliqueLongo}
+
+    
+

@@ -10,11 +10,14 @@ ${Campo_Email}    id=io.qaninja.android.twp:id/etEmail
 ${Campo_Senha}    id=io.qaninja.android.twp:id/etPassword
 ${BTN_Entrar}     id=io.qaninja.android.twp:id/btnSubmit
 ${BTN_CliqueSimples}    id=io.qaninja.android.twp:id/short_click
+${BTN_CliqueLongo}    id=io.qaninja.android.twp:id/long_click
 ${MSG_LoginSucesso}    Show! Suas credenciais são validas.
 ${MSG_EscolhaRadioBTN}    Escolha sua linguagem preferida
 ${MSG_MarqueTechs}    Marque as techs que usam Appium
 ${MSG_BtnCliqueSimples}    Botão clique simples
+${MSG_BtnCliqueLongo}    Botão clique longo
 ${MSG_CliqueSimples}    Isso é um clique simples
+${MSG_CliqueLongo}    CLIQUE LONGO OK
 ${Radio_Python}    xpath=//android.widget.RadioButton[contains(@text, 'Python')]
 ${CheckBox_Robot}    xpath=//android.widget.CheckBox[contains(@text, 'Robot Framework')]
 ${RefreshCheckbox}    id=io.qaninja.android.twp:id/rvContainer
@@ -58,4 +61,8 @@ Acessa tela Botões
 Acessa tela Clique Simples
     Click Text    CLIQUE SIMPLES
     Wait Until Page Contains    ${MSG_BtnCliqueSimples}
+
+Acessa tela Clique Longo
+    Click Text    CLIQUE LONGO
+    Wait Until Page Contains    ${MSG_BtnCliqueLongo}
     

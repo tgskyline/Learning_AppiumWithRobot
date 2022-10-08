@@ -11,8 +11,10 @@ ${Campo_Senha}    id=io.qaninja.android.twp:id/etPassword
 ${BTN_Entrar}     id=io.qaninja.android.twp:id/btnSubmit
 ${MSG_LoginSucesso}    Show! Suas credenciais são validas.
 ${MSG_EscolhaRadioBTN}    Escolha sua linguagem preferida
+${MSG_MarqueTechs}    Marque as techs que usam Appium
 ${Radio_Python}    xpath=//android.widget.RadioButton[contains(@text, 'Python')]
-
+${CheckBox_Robot}    xpath=//android.widget.CheckBox[contains(@text, 'Robot Framework')]
+${RefreshCheckbox}    id=io.qaninja.android.twp:id/rvContainer
 
 *** Keywords ***
 
@@ -36,6 +38,12 @@ Acessa tela Inputs
     Clica no botão hamburguer e valida resultado
     click Text    INPUTS
     Wait Until Page Contains    INPUTS
+
+Acessa tela Botões de Radio
     Click Text    BOTÕES DE RADIO
     Wait Until Page Contains    ${MSG_EscolhaRadioBTN}
+
+Acessa tela CheckBox
+    Click Text    CHECKBOX
+    Wait Until Page Contains    ${MSG_MarqueTechs}
     

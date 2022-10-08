@@ -8,6 +8,7 @@ Test Teardown    Fecha a aplicação
 
 Deve selecionar o Botão Radio PYTHON
     Acessa tela Inputs
+    Acessa tela Botões de Radio
     Click Element    ${Radio_Python}
     Wait Until Element Is Visible    ${Radio_Python} 
     Element Attribute Should Match        ${Radio_Python}    checked    true

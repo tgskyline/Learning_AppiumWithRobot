@@ -13,6 +13,7 @@ ${Campo_Senha}    id=io.qaninja.android.twp:id/etPassword
 ${BTN_Entrar}     id=io.qaninja.android.twp:id/btnSubmit
 ${BTN_CliqueSimples}    id=io.qaninja.android.twp:id/short_click
 ${BTN_CliqueLongo}    id=io.qaninja.android.twp:id/long_click
+${BTN_RemoveVingador}    id=io.qaninja.android.twp:id/btnRemove
 #MENSAGENS
 ${MSG_LoginSucesso}    Show! Suas credenciais são validas.
 ${MSG_EscolhaRadioBTN}    Escolha sua linguagem preferida
@@ -87,3 +88,12 @@ Lista de Perfis
     ${Perfil_Random}    Evaluate    random.choice(@{Lista_Perfil})
     Set Test Variable    ${Perfil_Random}
     Log To Console    ${\n}PERFIL ESCOLHIDO: ${Perfil_Random}
+
+Acessa tela AVENGERS
+    Clica no botão hamburguer e valida resultado
+    Click Text    AVENGERS
+    Wait Until Page Contains    AVENGERS
+
+Acessa tela LISTA
+    Click Text    LISTA
+    Wait Until Page Contains    LISTA

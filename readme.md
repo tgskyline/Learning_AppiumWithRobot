@@ -99,7 +99,7 @@ Faça download e instale
 
 Configure os Capabilities
 
-<b>NOTA</b>: Para identificar o seu 'udid' utilize o comando abaixo em um prompt PowerShell
+<b>NOTA</b>: Para identificar o seu 'udid' utilize o comando abaixo em um prompt PowerShell com o AVD e EMULADOR aberto e funcional.
 
 	abd devices
 

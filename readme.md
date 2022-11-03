@@ -31,16 +31,11 @@ Faça o download e instalação
 
 <b>NOTA</b>: Caso tenha tenha conhecimento utilize o script abaixo em um Prompt de comando PowerShell como Administrador, editando o caminho da pasta JDK do seu computador.
 
-	@echo off
-	@echo ***************** SETANDO VARIAVEIS DE AMBIENTE *****************
-	@echo off
+
 	SETX JAVA_HOME "C:\Program Files (x86)\Java\jdkX.X.X_XXX\;%JAVA_HOME%" -m
+
 	SETX PATH "C:\Program Files (x86)\Java\jdkX.X.X_XXX\bin\;%PATH%" -m
-	@echo .
-	@echo .
-	@echo **************** FECHE E ABRA NOVAMENTE O PROMPT ****************
-	@echo .
-	pause
+
 
 Execute o comando abaixo e válide se as variáveis foram criadas adequadamente sejam manualmente ou pelo script.
 
@@ -69,15 +64,11 @@ Faça o download e instalação
 
 <b>NOTA</b>: Caso tenha tenha conhecimento utilize o script abaixo em um Prompt de comando PowerShell como Administrador, editando o caminho da pasta do seu usuário no computador que esta como SEU-USUARIO.
 
-	@echo off
-	@echo ***************** SETANDO VARIAVEIS DE AMBIENTE *****************
-	@echo off
+
 	SETX ANDROID_HOME -m "C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\;%ANDROID_HOME%" -m
+	
 	SETX PATH "C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\platform-tools\;C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\;C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\bin\;C:\Users\SEU-USUARIO\AppData\Local\Android\Sdk\tools\lib\;%PATH%" -m
-	@echo .
-	@echo **************** FECHE E ABRA NOVAMENTE O PROMPT ****************
-	@echo .
-	pause
+
 
 Execute o comando abaixo e válide se as variáveis foram criadas adequadamente sejam manualmente ou pelo script.
 
